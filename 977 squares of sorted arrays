@@ -19,3 +19,6 @@ var sortedSquares = function(nums) {
     console.log(result);
     return result
 }
+
+// 1. as the array is already sorted and also contains the negative numbers this means start or the end of the array can be greater element so we can use the two pointer technique solve this problem.
+// 2. square the emelent from the start and end of the element and then push the element into the result whichever is he greater element.
