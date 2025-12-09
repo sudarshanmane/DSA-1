@@ -1,0 +1,17 @@
+var groupAnagrams = function(strs) {
+    
+    const ans = {};
+
+    for(let s of strs) {
+        let sSorted = s.trim().split('').sort().join("");
+            console.log(sSorted);
+        if(!ans[sSorted]) {
+            ans[sSorted] = []
+        } 
+        
+        ans[sSorted].push(s);
+    }
+
+    return Object.values(ans)
+
+};
