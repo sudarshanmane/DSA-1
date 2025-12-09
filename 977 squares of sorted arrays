@@ -1,0 +1,21 @@
+
+var sortedSquares = function(nums) {
+
+    let start = 0;
+    let end = nums.length - 1;
+    let result = []
+    let i = nums.length - 1;
+    while(start <= end){
+        if(nums[start]**2 > nums[end]**2){
+            result[i] = nums[start] ** 2
+            start++;
+            i--
+        } else {
+            result[i] = nums[end] ** 2
+            end--
+            i--
+        }
+    };
+    console.log(result);
+    return result
+}
