@@ -11,8 +11,6 @@ for (let i = 0; i < given.length; i++) {
   }
 }
 
-console.log(obj);
-
 for (let i = 0; i < target.length; i++) {
   if (obj[target[i]]) {
     obj[target[i]] -= 1;
