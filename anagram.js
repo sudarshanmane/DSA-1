@@ -1,5 +1,5 @@
-let given = "anagram";
-let target = "nagara";
+let given = "anagramac";
+let target = "nagaramabc";
 
 let obj = {};
 
@@ -16,10 +16,18 @@ console.log(obj);
 for (let i = 0; i < target.length; i++) {
   if (obj[target[i]]) {
     obj[target[i]] -= 1;
+    if (obj[target[i]] === 0) {
+      delete obj[target[i]];
+    }
   } else {
     console.log(false);
-    break;
+    return;
   }
+}
+
+if (Object.keys(obj).length) {
+  console.log(false);
+  return;
 }
 
 console.log(true);

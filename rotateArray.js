@@ -6,6 +6,7 @@ let res = [];
 // 3 -> 3 4 5 1 2
 // 4 -> 2 3 4 5 1
 // 5 -> 1 2 3 4 5
+
 let t = 20;
 let aR = t % input.length;
 if (!aR) {
