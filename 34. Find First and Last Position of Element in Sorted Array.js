@@ -8,7 +8,6 @@ let ans = 0;
 while (first <= second) {
   let mid = Math.floor((first + second) / 2);
 
-  console.log("inside", ans);
   if (given[mid] === target) {
     ans = mid;
     second = mid - 1;
@@ -19,7 +18,6 @@ while (first <= second) {
   }
 }
 
-console.log(ans);
 first = 0;
 second = given.length - 1;
 
@@ -35,4 +33,5 @@ while (first <= second) {
     first = mid + 1;
   }
 }
+
 console.log(ans);
