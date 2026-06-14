@@ -6,16 +6,30 @@ let j = 1;
 
 let count = 1;
 
-while (j < input.length) {
+// while (j < input.length) {
+//   if (input[i] != input[j]) {
+//     res += input[i] + count;
+//     count = 1;
+//   } else {
+//     count++;
+//   }
+//   i++;
+//   j++;
+// }
+
+res += input[i] + count;
+
+while (i < input.length) {
   if (input[i] != input[j]) {
-    res += input[i] + count;
-    count = 1;
+    res = res + input[i] + count;
   } else {
     count++;
   }
+
   i++;
   j++;
 }
+
 res += input[i] + count;
 
-console.log("res-----", res);
+console.log(res);

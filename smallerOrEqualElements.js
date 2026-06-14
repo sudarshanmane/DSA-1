@@ -4,7 +4,6 @@ function smallerOrEqualElements(A, B) {
   let res;
   while (first <= second) {
     let mid = Math.floor((first + second) / 2);
-    console.log(mid);
     if (A[mid] === B) {
       res = mid;
       first = mid + 1;
